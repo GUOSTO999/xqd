@@ -17,7 +17,7 @@ type Todo struct {
 }
 
 func lmysql() (err error) {
-	dsn := "dbuser:password@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "dbuser:password@tcp(127.0.0.1:3306)/dbnam?charset=utf8mb4&parseTime=True&loc=Local"
 	Db, err = gorm.Open("mysql", dsn)
 	if err != nil {
 		return err
